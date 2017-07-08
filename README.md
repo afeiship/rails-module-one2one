@@ -30,6 +30,19 @@ rails g model ClassRoom name:string
 rake db:migrate
 ```
 
+## model class:
+```rb
+# model/class_room.rb
+class ClassRoom < ApplicationRecord
+  has_one :teacher
+end
+
+# model/teacher.rb
+class Teacher < ApplicationRecord
+  belongs_to :class_room
+end
+```
+
 ## seed code:
 ```rb
 class_room = ClassRoom.create(:name=>'101')  
