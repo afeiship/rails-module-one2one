@@ -13,7 +13,7 @@
 + models(ClassRoom/Teacher) :
 ```conf
 ClassRoom has one Teacher
-Teacher belongs to ClassRoom.
+Teacher only belongs to ClassRoom.
 
 A: ClassRoom
 B: Teacher 
