@@ -4,8 +4,8 @@
 
 ## step to step:
 + conditions:
-1. A has B
-2. B belongs to A
+1. A has one B
+2. B only belongs to A
 3. A是主表，B是从表。
 4. A中id的主键值，在B中作为关联用的外键值。
 5. 一般来说需要在A、B类中定义对方的引用，以便能够通过一方找到另一方。
