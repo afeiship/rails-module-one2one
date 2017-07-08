@@ -41,6 +41,22 @@ end
 class Teacher < ApplicationRecord
   belongs_to :class_room
 end
+
+
+# teacher_controller.rb
+private
+    def teacher_params
+        #列举白名单列表
+        params.require(:teacher).permiate(:class_room_id, :name )
+    end
+
+# class_room_controller.rb
+private
+    def class_room_params
+        #列举白名单列表
+        params.require(:class_room).permiate(:name )
+    end
+
 ```
 
 ## seed code:
