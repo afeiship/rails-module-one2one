@@ -61,11 +61,12 @@ private
 
 ## seed code:
 ```rb
-class_room = ClassRoom.create(:name=>'101')  
-teacher = Teacher.create(:name=>'xiaoming');
+class_room = ClassRoom.create(:name=>'105')  
+teacher = Teacher.create(:name=>'xxxx');
 
 teacher.class_room = class_room;
 
+teacher.save
 puts teacher.class_room_id;
 ```
 
